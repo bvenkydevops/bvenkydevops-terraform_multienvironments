@@ -1,0 +1,5 @@
+env_name = "qa"
+vpc_cidr = "192.168.0.0/16"
+subnet_cidr = "192.168.1.0/24"
+instance_type = "c7i-flex.large"
+ami_id = "ami-0360c520857e3138f"
