@@ -10,6 +10,7 @@ terraform/
  └── prod.tfvars
 ```
 ----------------------------------------------------------------
+```
 🧱 main.tf
 terraform {
   required_providers {
@@ -102,7 +103,9 @@ output "instance_public_ip" {
   value = aws_instance.web.public_ip
 }
 
+```
 ---------------------------------------------------------------------
+```
 🌱 Environment Variable Files
 🟢 dev.tfvars
 env_name       = "dev"
@@ -110,24 +113,27 @@ vpc_cidr       = "10.0.0.0/16"
 subnet_cidr    = "10.0.1.0/24"
 instance_type  = "t3.micro"
 ami_id         = "ami-0dee22c13ea7a9a67"
-
+```
 ---------------------------------------------------------------------------
+```
 🟡 qa.tfvars
 env_name       = "qa"
 vpc_cidr       = "10.1.0.0/16"
 subnet_cidr    = "10.1.1.0/24"
 instance_type  = "t3.small"
 ami_id         = "ami-0dee22c13ea7a9a67"
-
+```
 ------------------------------------------------------------------------
+```
 🔴 prod.tfvars
 env_name       = "prod"
 vpc_cidr       = "10.2.0.0/16"
 subnet_cidr    = "10.2.1.0/24"
 instance_type  = "t3.medium"
 ami_id         = "ami-0dee22c13ea7a9a67"
-
+```
 --------------------------------------------------------------------------------
+```
 🚀 Commands to Run
 1️⃣ Initialize Terraform
 terraform init
@@ -137,24 +143,29 @@ terraform workspace new dev
 terraform workspace new qa
 terraform workspace new prod
 
+```
 -----------------------------------------------------------------------
+```
 3️⃣ Apply for Specific Environment
 terraform workspace select dev
 terraform apply -var-file="dev.tfvars"
-
+```
 ----------------------------------------------------------------------
+```
 For QA:
 
 terraform workspace select qa
 terraform apply -var-file="qa.tfvars"
-
+```
 ---------------------------------------------------------------------------
+```
 For PROD:
 
 terraform workspace select prod
 terraform apply -var-file="prod.tfvars"
-
+```
 ----------------------------------------------------------------------------
+```
 ✅ Result
 
 Single codebase.
@@ -162,7 +173,7 @@ Single codebase.
 Three different environments.
 
 Isolated state files (if backend key includes ${terraform.workspace}).
-
+```
 ---------------------------------------------------------------------------------------
 
 
