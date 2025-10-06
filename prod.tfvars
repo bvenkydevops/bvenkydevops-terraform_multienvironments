@@ -1,0 +1,5 @@
+env_name = "prod"
+vpc_cidr = "10.1.0.0/16"
+subnet_cidr = "10.1.1.0/24"
+instance_type = "t3.micro"
+ami_id = "ami-0fd3ac4abb734302a"
