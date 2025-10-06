@@ -1,5 +1,5 @@
 # bvenkydevops-terraform_multienvironments
-
+```
 📁 Folder Structure
 terraform/
  ├── main.tf
@@ -8,6 +8,7 @@ terraform/
  ├── dev.tfvars
  ├── qa.tfvars
  └── prod.tfvars
+```
 ----------------------------------------------------------------
 🧱 main.tf
 terraform {
