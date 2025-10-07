@@ -178,7 +178,6 @@ Isolated state files (if backend key includes ${terraform.workspace}).
 
 
 <img width="1920" height="1080" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/18c7bd20-1825-4caa-9ffb-703aa3f6d193" />
-<img width="1920" height="1080" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/4cdc80cd-6730-495e-be64-6de1306e0ea8" />
 
 <img width="1920" height="1080" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/32e78b20-7854-45e3-a4b9-0f21026aadd6" />
 
